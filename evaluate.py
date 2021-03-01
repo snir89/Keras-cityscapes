@@ -6,7 +6,6 @@ from utils.generator import read_labeled_image_list
 
 
 def calculate_iou(n_classes, pred_dir, val_labels):
-    #建立一个方阵，对角线上求和为交集，一横一竖求和为并集
     conf_m = np.zeros((n_classes, n_classes), dtype=float)
     total = 0
     # mean_acc = 0.
